@@ -1,5 +1,16 @@
 DragSortListView
 ================
+Thanks to Bauerca for giving us such a creative tool, permiting a reliable and reflexible showing method of ListView.
+
+Through using this DSLV, I concluded my experience as follows.
+1. xml attrs is highly recommanded for configuring DSLV
+2. To manipulating the data sets of DSLV, the remove() and insert() method of listadapter should be overrided firstly.
+   Then, the operation on the data sets will revealed immediately on DSLV, rather than on the data sets, mobjects, of DSLV's father class-ListView.
+3. DSLV is suitable to use in Fragment.class
+4. Usage structure: Fragment->DragSortListView->ArrayAdapter
+
+
+# NOTICE: The following is original copy of README.MD from Bauerca:
 
 # NOTICE: No longer maintained.
 
